@@ -69,7 +69,8 @@ BOOTSTRAP_CONFIGURE_OPTS="--host=$HOST_NAME \
                           --disable-decimal-float \
                           $GCC_OPTS \
                           --disable-nls \
-                          --enable-checking=release"
+                          --enable-checking=release \
+                          --with-default-libstdcxx-abi=gcc4-compatible"
 
 PKG_CONFIGURE_OPTS_HOST="--target=$TARGET_NAME \
                          --with-sysroot=$SYSROOT_PREFIX \
@@ -106,7 +107,8 @@ PKG_CONFIGURE_OPTS_HOST="--target=$TARGET_NAME \
                          --enable-clocale=gnu \
                          $GCC_OPTS \
                          --disable-nls \
-                         --enable-checking=release"
+                         --enable-checking=release \
+                         --with-default-libstdcxx-abi=gcc4-compatible"
 
 pre_configure_bootstrap() {
   setup_toolchain host
