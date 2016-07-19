@@ -4,7 +4,7 @@
 # determines DISTRO, if not forced by user
 # default is OpenELEC
 if [ -z "$DISTRO" ]; then
-  DISTRO="OpenELEC"
+  DISTRO="Lakka"
 else
   DISTRO="$DISTRO"
 fi
