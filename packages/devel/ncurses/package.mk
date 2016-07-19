@@ -80,6 +80,7 @@ PKG_CONFIGURE_OPTS_TARGET="--without-ada \
 pre_configure_target() {
   # causes some segmentation fault's (dialog) when compiled with gcc's link time optimization.
   strip_lto
+  CPPFLAGS="$CPPFLAGS -P"
 }
 
 post_makeinstall_target() {
